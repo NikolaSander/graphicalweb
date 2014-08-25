@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Graphical Web 2014</title>
+		<meta name="description" content="Data visualisation at the nexus of science and the public">
+		<meta name="author" content="Nikola Sander & Ramon Bauer">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/nikola.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );}
+		</script>
+		
+		<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+
+	  <!-- D3 -->
+		<link href="d3/dist/app-v1.css" rel="stylesheet" media="all">
+		<!--[if lt IE 9]><script src=javascripts/html5shiv-printshiv.js></script><![endif]-->
+		<script src="d3/dist/app-v1.js"></script>
+	  
+	 <!-- Twitter colour theme -->
+		<meta name="twitter:widgets:link-color" content="#FF7F00">
+		<meta name="twitter:widgets:theme" content="dark">
+	
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+
+		<!-- SLIDES -->		
+
+			<section>
+				<h2>Data visualisation at the nexus of science and the public</h2>
+				<h3>Nikola Sander, Guy Abel, Ramon Bauer<br> & Johannes Schmidt</h3>
+				<h4>Wittgenstein Centre, Vienna Institute of Demography; <br>Null2, Berlin</h4>
+				<br>
+				<h4>The Graphical Web Conference, August 2014</h4>
+				<h4>Slides: <a href="http://www.nikolasander.com/graphicalweb" target="_blank">nikolasander.com/graphicalweb</a></h4>
+			</section>
+
+			<section data-background="images/circular-world.png">	
+			<h2 style="text-align:center; color:#F4EBCE;background-color: rgba(0, 0, 0, 0.5)">Science communication<br> & data visualisation</h2>
+			</section>	
+
+			<section data-background="images/text-tabelle.jpg">		
+			<h2>State of science communication</h2>
+			<blockquote>
+			“Scientists must learn to communicate with the public, be willing to do so and indeed consider it their duty to do so.”
+			</blockquote>
+			<p style="text-align:right">Royal Society, 1985</p>
+			</section>				
+			
+			<section>
+			<h2>Science communication in the digital era</h2>
+			<p>A late transition from traditional to digital dissemination.</p>
+			<p>Barriers to communication:</p>	
+				<ul>
+				<li>Scientists don't get paid for doing outreach</li>
+				<li>Scientists lack the skills to communicate</li>
+				</ul>
+			<br>
+			<p>Science communication needs a change in attitudes.</p>
+			</section>			
+			
+			<section>
+			<h2>From informing to engaging the public</h2>
+			<p>More openness in the research process encourages participation and engagement.</p>
+			<br>
+			<ul>
+				<li>Open access … to research articles</li>
+				<li>Open data … facilitates the re-use of data</li>
+				<li>Open source … enables use and development of applications</li>
+				<li>Open science … fosters the accessibility of research processes</li>
+			</ul>
+			</section>	
+
+			<section>
+			<h2>Data visualisation in science communication</h2>
+			<blockquote><small>“Visualizations invite people to touch, stroke, and go deeper into the data that underlie them. They engage.”</small></blockquote>
+			<p style="text-align:right; font-size: 90%;">Michael Schrage, 2013</p>
+			<br>
+			<p>How does data visualisation encourage engagement?</p>
+			<ul>
+				<li>attract visually (exploiting visual perception)</li>
+				<li>re/present data (allows insights)</li>
+				<li>facilitate accessibility & understanding (of research findings)</li>
+				<li>amplify cognition (allow user to go deeper into the data & topic)</li>
+			</ul>
+			</section>	
+			
+			<section>
+			<h2>The problem is …</h2>
+			<blockquote style="font-size:110%">“Scientists do not seem to distinguish between analysis and communication. The last exploratory graph becomes explanatory.”</blockquote>
+			<p style="text-align:right; font-size: 90%;"Moritz Stefaner, Data Stories Episode 37</p>
+			<br>
+			<table><tr>
+			<td>
+			<p style="font-size:90%">Scientists lack the mind<br> & skill sets to communicate<br> data visually</p>
+			</td>
+			<td>	
+			<img src="images/100percentEXCEL.png" width="500">
+			</td>
+			</tr></table>
+			</section>	
+			
+			<section>
+			<h2>What skills do we need to engage visually?</h2>
+			<p>Literacy refers to the ability to read for knowledge, write coherently and think critically about printed material.</p>
+			<br>
+			<ul>
+				<li>Data literacy … to make use of quantitative information</li>
+				<li>Statistical literacy … to make sense of statistical information</li>
+				<li>Scientific literacy …  to evaluate the quality of scientific information</li>
+				<li>Visual literacy … to construct meaning from visual images</li>
+				<li>Media literacy … to apply literacy skills to media and technology messages</li>
+			</ul>
+			</section>				
+
+			<section>
+			<h2>Ready, willing and able</h2>
+			<p>Preconditions required to adopt a new form of behaviour (Coale, 1973):</p>
+			<br>
+			<ul>
+				<li>readiness … a new behaviour must be advantageous</li>
+				<li>willingness … a new behaviour must be cultural acceptable</li>
+				<li>ability … technical or social means for the realisation of new behaviours</li>
+			</ul>
+			</section>						
+			
+			<section>
+			<h2>Ready, willing and able to engage with the public</h2>
+				<p>Readiness … why researchers should engage</p>
+				<p>&#8594; change in job description</p>
+				<br>
+				<p>Willingness … what it brings for researchers to engage</p>
+				<p>&#8594; change in mind set</p>
+				<br>
+				<p>Ability … how they can engage visually</p>
+				<p>&#8594; change in skill set</p>
+			</ul>
+			</section>				
+			
+			
+			<section data-background="images/Kirk-hats1.png">	
+			<p style="font-size:180%; color:#000"><i>"Data visualisation is a multi-disciplinary subject"</i></p>		
+			<p style="text-align:right; font-size: 110%; color:#000">Andy Kirk, 2012</p>	
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</section>				
+			
+			<section data-background="images/circular-world.png">	
+			<h2 style="text-align:center; color:#F4EBCE;background-color: rgba(0, 0, 0, 0.5)">The Global Flow of People</h2>
+			</section>				
+			
+			<section data-background="images/boat_italian_navy.jpeg">				
+				<h2 style="background-color: rgba(0, 0, 0, 0.5)">Global migration has accelerated and diversified</h2>
+			</section>
+			
+			<section>
+				<h2>Problems with migration data</h2>
+				<p>Gaps in coverage worldwide.</p>
+				<p>Differences in the way of measurement.</p>
+				<p>Harmonised flow data only for Europe</p>
+			</section>			
+			
+			<section>
+				<h2>Data on migrant stocks</h2>
+				<p>Widely captured in population censuses.</p>
+				<p>Country of birth != country of current residence.</p>
+				<p>UNPD released global bilateral dataset in 2013.</p>
+				<p>Accumulative measure that cannot capture recent trends.</p>
+			</section>					
+	
+			<section data-background="images/train_people_abcnetau.jpg">				
+				<h2 style="background-color: rgba(0, 0, 0, 0.4)">How many people migrated in the world in 2005-10?</h2>
+			</section>	
+			
+			<section>
+				<h2>Estimating flows from stocks</h2>
+				<table><tr>
+				<td>
+				<h3 style="text-decoration: underline">UN stock data</h3>
+				<p>lifetime transitions</p>
+				<p>static snapshot of <br>immigrant population</p>
+				<p>1990, 2000, 2010</p>
+				<p>~220 countries</p></td>
+				<td><h2>&#10140; </h2></td>
+				<td style="padding-left:1.5em">
+				<h3 style="text-decoration: underline">Our flow estimates</h3>
+				<p>5-year transitions</p>
+				<p>dynamic movements<br> over time</p>
+				<p>1990-95 to 2005-10</p>
+				<p>196 countries</p></td>
+				</tr></table>
+			</section>	
+
+			<section>
+				<h2>Migrant stock table, 2000</h2>
+				<img src="images/Table_2000.png"  width="650">
+			</section>			
+			
+			<section>
+				<h2>Estimated flow matrix, 2005-10</h2>
+				<img src="images/Table_result.png"  width="650">
+			</section>
+			
+			<section>
+				<h2>No rising tide of migration</h2>
+				<p>About 0.6 % of world population have moved over 5-year periods since 1995.</p>
+				<img src="images/global-intensity.png"  width="700">
+			</section>
+			
+			<section data-background="images/Table_big1.png">				
+			</section>	
+
+			<section data-background="images/minard_map1.png">				
+			</section>	
+			
+			<section data-background="images/Adam_flowmap1.png">				
+			</section>	
+
+			<section>
+				<img src="images/postcard_2005.png" width="680">
+			</section>
+
+			<section>
+				<h2>Quantifying Global International Migration Flows</h2>
+				<p>Guy Abel & Nikola Sander.<br>Published in <i>Science</i> on 28 March 2014; vol 343: 1520-1522.</p> 
+			</section>	
+			
+			<section data-background="images/demogr-datasheet1.png">				
+			</section>				
+
+			<section data-background="images/datasheets_both.png">				
+			</section>		
+
+			<section>	
+				<h2 style="font-size:160%">Teaming up with coders and designers to create <span style="color:#F4EBCE">The Global Flow of People</span></h2>
+				<p>Coding: Null2 in Berlin</p>
+				<p>Web design: Elvira Stein in Vienna</p>
+			</section>
+			
+			<section data-background="images/global-migration.png">				
+			</section>
+		
+			
+			<!-- Interactive -->
+			<section style="width:800px">
+				<div>
+					<nav role=navigation>
+					<div id="timeline"></div>
+					</nav>
+
+					<div id="diagram"></div>
+				</div>
+				  <script>
+					(function() {
+					  var help = d3.select('#help');
+					  help.on('click', function() {
+						var isActive = help.classed('active');
+						help
+						  .classed('active', !isActive)
+						  .transition()
+						  .style('width', isActive ? '30px' : '572px');
+					  });
+					  function helpOffset() {
+						var offset = Math.max((document.body.clientWidth - document.getElementById('container').clientWidth) / 2, 0);
+						help.style('right', offset + 'px');
+					  }
+					  d3.select(window).on('resize.help-resize', helpOffset);
+					  helpOffset();
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  var datafile = 'd3/json/migrations.json';
+					  var aLittleBit = Math.PI / 100000;
+					  d3.json(datafile, function(data) {
+						var now = 2005;
+						var chart = Globalmigration.chart(data, {
+						  element: '#diagram',
+						  now: now,
+						  animationDuration: 1400,
+						  margin: 125,
+						  arcPadding: 0.04,
+						  layout: {
+							threshold: 50000,
+							labelThreshold: 5000,
+							colors: 'cd3d08 ec8f00 6dae29 683f92 b60275 2058a5 00a592 009d3c 378974 ffca00'.split(' ').map(function(c) { return '#' + c; })
+						  }
+						});
+						Globalmigration.timeline(chart, {
+						  now: now,
+						  element: '#timeline'
+						});
+						chart.draw(now);
+					  });
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  function loadScript(d,s,l,id){
+						var js,
+						fjs=d.getElementsByTagName(s)[0],
+						p=/^http:/.test(d.location)?'http':'https';
+						if(!id || !d.getElementById(id)){
+						  js=d.createElement(s);
+						  js.id=id;
+						  js.src=p+'://' + l;
+						  fjs.parentNode.insertBefore(js,fjs);
+						}
+					  }
+					})();
+				  </script>
+			</section>			
+
+			<section data-background="images/Express-headline1.png">
+			</section>	
+			
+			<section data-background="images/quartz.png">
+			</section>	
+			
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none"><p>Where everyone in the world is migrating <a href="http://t.co/goRNOClrFj">http://t.co/goRNOClrFj</a> <a href="http://t.co/1b6rI2LW50">pic.twitter.com/1b6rI2LW50</a></p>&mdash; Quartz (@qz) <a href="https://twitter.com/qz/statuses/449361162035945473">March 28, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+			
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p>Fantastic visualization of global migration data. I'm on there if you zoom in a lot. <a href="http://t.co/VeAUPXNrd6">http://t.co/VeAUPXNrd6</a></p>&mdash; Pumphrey&#39;s Math (@PumphreysMath) <a href="https://twitter.com/PumphreysMath/statuses/451694063184408577">April 3, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+			
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p>An eye-opening (beautifully executed) visualization on migration <a href="https://twitter.com/sciencemagazine">@sciencemagazine</a> <a href="http://t.co/l83SbIVzr9">http://t.co/l83SbIVzr9</a> Love that data can be downloaded!</p>&mdash; dukewired (@dukewired) <a href="https://twitter.com/dukewired/statuses/450230913847525376">March 30, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+			
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p>Very interesting, pretty, and pretty thought-provoking too... puts the UK tabloids' rants into perspective! <a href="http://t.co/9TPJWD63Lc">http://t.co/9TPJWD63Lc</a></p>&mdash; Craig Owen (@craigowen1976) <a href="https://twitter.com/craigowen1976/statuses/450743201193013248">March 31, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+			
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p><a>#SomeoneTellMarineLePen</a> African migrants aren't invading us, and here's the data to prove it <a href="http://t.co/njcn66Xsjg">http://t.co/njcn66Xsjg</a> <a href="http://t.co/Ug4hTcl8V0">pic.twitter.com/Ug4hTcl8V0</a></p>&mdash; Jacques (@jacksometer) <a href="https://twitter.com/jacksometer/statuses/450603653158957057">March 31, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+
+			<section data-background="images/sciam1.png">
+			</section>					
+			
+			<section data-background="images/ilo.png">
+			</section>	
+
+			<section>
+				<h2>Conclusions</h2>
+				<p>Using data visualisation to engage the public works</p>
+				<ul>
+				<li>Teaming up was essential</li>
+				<li>Positive feedback from scientists & the public</li>
+				</ul>
+				<br><br>
+				<p>How to change a researcher's mind and skill set?</p>
+				<ul>
+				<li>mind set ... incentives and best practice</li>
+				<li>skill set ... education and training</li>
+				</ul>
+				<br><br>
+				<p style="color:#ff7f00">Data visualisation has the potential to bridge the gap between science and the public</p>
+			</section>
+			
+			<section data-background="images/circular1_dark.png">
+				<p><a href="http://www.global-migration.info" target="_blank">"The Global Flow of People"</a><br>Interactive data visualisation</p>
+				<p><a href="http://www.circular-world.com" target="_blank">circular-world.com</a><br>A collection of our circular migration plots</p>
+				<br><br>
+				<p style="text-align:right">nikola.sander@oeaw.ac.at <br><a href="https://twitter.com/nikolasander" target="_blank">@nikolasander</a></p>
+				<p style="text-align:right">ramon@metropop.eu <br><a href="https://twitter.com/metropop_eu" target="_blank">@metropop_eu</a></p>
+			</section>
+
+			
+		<!-- END SLIDES -->		
+		</div>
+	</div>
+	
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: false,
+				center: true,
+				slideNumber: true,
+				keyboard: true,
+				overview: true,
+				touch: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+	</script>
+	</div>
+</body>
+</html>
