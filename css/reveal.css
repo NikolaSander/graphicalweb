@@ -8,6 +8,7 @@
  * Copyright (C) 2014 Hakim El Hattab, http://hakim.se
  */
 
+ /*
  @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -20,7 +21,8 @@
   font-weight: 700;
   src: local('Montserrat-Bold'), url('font/Montserrat-Bold') format('wolff');
 }
- 
+*/
+
 
 /*********************************************
  * RESET STYLES
@@ -122,14 +124,14 @@ body {
 	   -moz-hyphens: auto;
 	        hyphens: auto;
 
-	word-wrap: break-word;
+	word-wrap: normal;
 	line-height: 1;
 }
 
-.reveal h1 { font-size: 3.1em; }
-.reveal h2 { font-size: 2.11em;	}
-.reveal h3 { font-size: 1.55em;	}
-.reveal h4 { font-size: 1em;	}
+.reveal h1 { font-size: 2.8em; }
+.reveal h2 { font-size: 2.1em;	}
+.reveal h3 { font-size: 1.8em;	}
+.reveal h4 { font-size: 1.1em;	}
 
 
 /*********************************************
@@ -293,7 +295,7 @@ body {
 	font-weight: bold;
 }
 
-.reveal em,
+.reveal em ,
 .reveal i {
 	font-style: italic;
 }
@@ -301,7 +303,6 @@ body {
 .reveal ol,
 .reveal ul {
 	display: inline-block;
-
 	text-align: left;
 	margin: 0 0 0 1em;
 }

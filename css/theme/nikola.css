@@ -3,9 +3,32 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 
+ 
+ /**
+ @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url('font/Montserrat-Regular') format('wolff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url('font/Montserrat-Bold') format('wolff');
+} 
+ */
+
+.reveal em {
+	color: #ff7f00;
+	font-style:normal;
+} 
+ 
 .reveal blockquote {
 font-size: 170%;
   line-height: 1.5em;
